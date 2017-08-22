@@ -16,6 +16,7 @@
 google_calendars.yaml
 known_devices.yaml
 secrets.yaml
+configuration.yaml.save
 .google.token
 .HA_VERSION
 .uuid

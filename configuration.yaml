@@ -61,14 +61,6 @@ group: !include groups.yaml
 automation: !include automations.yaml
 #scene: !include scenes.yaml
 
-# Netgear device tracking
-device_tracker:
-  - platform: netgear
-    host: !secret netgear_ip
-    username: !secret netgear_username
-    password: !secret netgear_password
-    track_new_devices: yes
-
 nest:
   client_id: !secret nest_id
   client_secret: !secret nest_secret
