@@ -1,0 +1,31 @@
+# File Extensions
+*.conf
+*.crt
+*.csr
+*.db
+*.db-journal
+*.key
+*.log
+*.noload
+*.pid
+*.sqlite
+*.txt
+*.xml
+
+# Specific Files
+google_calendars.yaml
+known_devices.yaml
+secrets.yaml
+.google.token
+.HA_VERSION
+.uuid
+!/.gitignore
+
+# Directories
+deps
+www
+tts
+
+# Python Caches
+__pycache__
+*.pyc

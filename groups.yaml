@@ -1,0 +1,71 @@
+########
+#GROUPS
+########
+
+default_view: 
+  icon: "mdi:home"
+  view: true
+  entities: 
+    - group.laundry_room_lights
+    - group.dining_room_lights
+    - group.living_room_lights
+    - climate.entryway
+    
+    
+living_room: 
+  name: "Living Room"
+  view: true
+  entities: 
+    - media_player.the_man_cave
+    - light.living_room_ceiling_left
+    - light.living_room_ceiling_right 
+
+laundry_room:
+ name: "Laundry Room"
+ view: true
+ entities:
+     - light.laundry_room
+
+dining_room:
+ name: "Dining Room"
+ view: true
+ entities:
+     - climate.entryway
+     - light.dining_room_ceiling_1
+     - light.dining_room_ceiling_2
+ 
+bedroom:
+ name: "Bedroom"
+ view: true
+ entities: 
+     - media_player.bedroom
+
+speedtest:
+ name: "Crappy Internet"
+ view: true
+ entities:
+     - sensor.speedtest_download
+     - sensor.speedtest_ping
+     - sensor.speedtest_upload
+
+############################
+#HUE LIGHTS GROUP
+###########################
+
+living_room_lights:
+ name: Living Room Lights
+ entities:
+     - light.living_room_ceiling_left
+     - light.living_room_ceiling_right
+
+laundry_room_lights:
+ name: Laundry Room Lights
+ entities:
+     - light.laundry_room
+
+dining_room_lights:
+ name: Dining Room Lights
+ entities:
+     - light.dining_room_ceiling_1
+     - light.dining_room_ceiling_2
+
