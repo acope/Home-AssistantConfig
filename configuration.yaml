@@ -55,7 +55,14 @@ sensor:
   - platform: emoncms 
     api_key: !secret emoncms_key
     url: https://emoncms.org 
-    id: 1 
+    id: 1
+  - platform: systemmonitor
+    resources:
+      - type: disk_use_percent
+        arg: /home
+      - type: memory_free
+      - type: memory_use
+      - type: processor_use 
 
 group: !include groups.yaml 
 automation: !include automations.yaml

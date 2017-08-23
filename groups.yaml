@@ -9,8 +9,7 @@ default_view:
     - group.laundry_room_lights
     - group.dining_room_lights
     - group.living_room_lights
-    - climate.entryway
-    
+    - climate.entryway    
     
 living_room: 
   name: "Living Room"

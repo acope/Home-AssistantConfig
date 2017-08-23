@@ -5,4 +5,4 @@
 
 #Activate the virtual enviroment
 #Useful for when needing to run the hass command
-source /srv/hass/hass_venv/bin/activate
+source /srv/homeassistant/homeassistant_venv/bin/activate
