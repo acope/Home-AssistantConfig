@@ -1,0 +1,3 @@
+#Create sudo session
+
+sudo su - homeassistant

@@ -1,0 +1,8 @@
+#############################################
+# List of useful commands with description
+############################################
+
+
+#Activate the virtual enviroment
+#Useful for when needing to run the hass command
+source /srv/hass/hass_venv/bin/activate

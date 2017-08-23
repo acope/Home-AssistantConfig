@@ -21,6 +21,8 @@ configuration.yaml.save
 .HA_VERSION
 .uuid
 !/.gitignore
+!/help/root_session.txt
+!/help/useful_commands.txt
 
 # Directories
 deps
