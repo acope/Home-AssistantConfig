@@ -44,18 +44,8 @@ logbook:
 # Track the sun
 sun:
 
-# Weather Prediction
 sensor:
   - platform: yr
-  - platform: speedtest
-    monitored_conditions:
-      - ping
-      - download
-      - upload 
-  - platform: emoncms 
-    api_key: !secret emoncms_key
-    url: https://emoncms.org 
-    id: 1
   - platform: systemmonitor
     resources:
       - type: disk_use_percent
@@ -79,3 +69,17 @@ nest:
     - 'target'
     - 'hvac_state'
 
+influxdb:
+  host: 192.168.0.58
+  port: 8086
+# uncomment if you used a password
+#  username: admin  
+#  password: !secret influxdb_password
+  database: homeassistant
+  default_measurement: state
+# exclude stuff that is pointless to log
+  exclude: 
+    domains:
+      - group 
+#    entities:
+#      - sensor.other_junk_you_dont_care_about
